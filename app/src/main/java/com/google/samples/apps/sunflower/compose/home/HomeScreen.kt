@@ -70,6 +70,7 @@ enum class SunflowerPage(
 fun HomeScreen(
     modifier: Modifier = Modifier,
     onPlantClick: (Plant) -> Unit = {},
+    onDatabaseClick: () -> Unit = {},
     viewModel: PlantListViewModel = hiltViewModel(),
     pages: Array<SunflowerPage> = SunflowerPage.values()
 ) {
@@ -82,6 +83,7 @@ fun HomeScreen(
             HomeTopAppBar(
                 pagerState = pagerState,
                 onFilterClick = { viewModel.updateData() },
+                onDatabaseClick = onDatabaseClick,
                 scrollBehavior = scrollBehavior
             )
         }
@@ -163,18 +165,26 @@ fun HomePagerScreen(
 private fun HomeTopAppBar(
     pagerState: PagerState,
     onFilterClick: () -> Unit,
+    onDatabaseClick: () -> Unit,
     scrollBehavior: TopAppBarScrollBehavior,
     modifier: Modifier = Modifier
 ) {
     CenterAlignedTopAppBar(
         title = {
-                Text(
-                    text = stringResource(id = R.string.app_name),
-                    style = MaterialTheme.typography.headlineSmall
-                )
+            Text(
+                text = stringResource(id = R.string.app_name),
+                style = MaterialTheme.typography.headlineSmall
+            )
         },
         modifier = modifier,
         actions = {
+            IconButton(onClick = onDatabaseClick) {
+                Icon(
+                    painter = painterResource(id = R.drawable.ic_filter_list_24dp), // Temporarily use filter icon or search for a better one
+                    contentDescription = "Ver Tablas",
+                    tint = MaterialTheme.colorScheme.primary
+                )
+            }
             if (pagerState.currentPage == SunflowerPage.PLANT_LIST.ordinal) {
                 IconButton(onClick = onFilterClick) {
                     Icon(

@@ -27,6 +27,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.google.samples.apps.sunflower.R
+import com.google.samples.apps.sunflower.compose.database.DatabaseInspectorScreen
 import com.google.samples.apps.sunflower.compose.gallery.GalleryScreen
 import com.google.samples.apps.sunflower.compose.home.HomeScreen
 import com.google.samples.apps.sunflower.compose.plantdetail.PlantDetailsScreen
@@ -53,6 +54,9 @@ fun SunFlowerNavHost(
                             plantId = it.plantId
                         )
                     )
+                },
+                onDatabaseClick = {
+                    navController.navigate(Screen.DatabaseInspector.route)
                 }
             )
         }
@@ -87,6 +91,11 @@ fun SunFlowerNavHost(
                 onUpClick = {
                     navController.navigateUp()
                 })
+        }
+        composable(route = Screen.DatabaseInspector.route) {
+            DatabaseInspectorScreen(
+                onBackClick = { navController.navigateUp() }
+            )
         }
     }
 }

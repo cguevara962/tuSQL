@@ -45,7 +45,7 @@ android {
   buildTypes {
     release {
       isMinifyEnabled = true
-      proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
     create("benchmark") {
       initWith(getByName("release"))
@@ -83,15 +83,6 @@ android {
   }
 
   testOptions {
-    managedDevices {
-      devices {
-        maybeCreate<com.android.build.api.dsl.ManagedVirtualDevice>("pixel2api27").apply {
-          device = "Pixel 2"
-          apiLevel = 27
-          systemImageSource = "aosp"
-        }
-      }
-    }
   }
   namespace = "com.google.samples.apps.sunflower"
 }
