@@ -180,7 +180,7 @@ private fun HomeTopAppBar(
         actions = {
             IconButton(onClick = onDatabaseClick) {
                 Icon(
-                    painter = painterResource(id = R.drawable.ic_filter_list_24dp), // Temporarily use filter icon or search for a better one
+                    painter = painterResource(id = R.drawable.ic_database),
                     contentDescription = "Ver Tablas",
                     tint = MaterialTheme.colorScheme.primary
                 )
