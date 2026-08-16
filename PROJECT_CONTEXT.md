@@ -1,6 +1,6 @@
 # tuSQL - Contexto y Estado del Proyecto
 
-Este archivo sirve como memoria técnica para el desarrollo de la aplicación **tuSQL** (anteriormente tuSQL).
+Este archivo sirve como memoria técnica para el desarrollo de la aplicación **tuSQL** (anteriormente Sunflower).
 
 ## 🚀 Estado Actual
 La aplicación ha sido migrada de tuSQL a **tuSQL**, enfocándose en la visibilidad y gestión de datos SQLite/Room.
