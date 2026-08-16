@@ -1,9 +1,9 @@
 # tuSQL - Contexto y Estado del Proyecto
 
-Este archivo sirve como memoria técnica para el desarrollo de la aplicación **tuSQL** (anteriormente Sunflower).
+Este archivo sirve como memoria técnica para el desarrollo de la aplicación **tuSQL** (anteriormente tuSQL).
 
 ## 🚀 Estado Actual
-La aplicación ha sido migrada de Sunflower a **tuSQL**, enfocándose en la visibilidad y gestión de datos SQLite/Room.
+La aplicación ha sido migrada de tuSQL a **tuSQL**, enfocándose en la visibilidad y gestión de datos SQLite/Room.
 
 ### Cambios Realizados:
 - **Rebranding Completo:** Cambio de nombre en recursos (`strings.xml`), configuración de Gradle (`settings.gradle.kts`) y documentación (`README.md`).
@@ -21,7 +21,7 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 
 ## 📌 Pendientes y Próximos Pasos
 - [ ] **Edición en Inspector:** Permitir editar o eliminar registros directamente desde la pantalla de inspección de tablas.
-- [ ] **Limpieza de Paquetes:** Opcionalmente, renombrar el paquete técnico `com.google.samples.apps.sunflower` a `com.tuSQL.app`.
+- [ ] **Limpieza de Paquetes:** Opcionalmente, renombrar el paquete técnico `com.tusql.app` a `com.tuSQL.app`.
 - [ ] **Nuevas Tablas:** Si se añaden más entidades a Room, registrarlas en el `DatabaseViewModel` e incluirlas en el inspector.
 - [ ] **UI/UX:** Mejorar el diseño visual de las filas en el inspector de tablas para que sea más legible (filtros, búsqueda).
 - [ ] **Creación Dinámica de Tablas:** Implementar un motor SQL puro (SupportSQLiteDatabase) para permitir al usuario definir y crear sus propias tablas en tiempo de ejecución.

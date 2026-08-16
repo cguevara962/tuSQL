@@ -32,7 +32,7 @@
 -keepclassmembernames class kotlinx.** {
     volatile <fields>;
 }
--keepclassmembers class com.google.samples.apps.sunflower.** { <fields>; }
+-keepclassmembers class com.tusql.app.** { <fields>; }
 
 
  # Keep annotation default values (e.g., retrofit2.http.Field.encoded).

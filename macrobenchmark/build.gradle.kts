@@ -48,7 +48,7 @@ android {
     }
 
     targetProjectPath = ":app"
-    namespace = "com.google.samples.apps.sunflower.macrobenchmark"
+    namespace = "com.tusql.app.macrobenchmark"
     experimentalProperties["android.experimental.self-instrumenting"] = true
 }
 

@@ -26,10 +26,10 @@ android {
   compileSdk = libs.versions.compileSdk.get().toInt()
 
   defaultConfig {
-    applicationId = "com.google.samples.apps.sunflower"
+    applicationId = "com.tusql.app"
     minSdk = libs.versions.minSdk.get().toInt()
     targetSdk = libs.versions.targetSdk.get().toInt()
-    testInstrumentationRunner = "com.google.samples.apps.sunflower.utilities.MainTestRunner"
+    testInstrumentationRunner = "com.tusql.app.utilities.MainTestRunner"
     versionCode = 1
     versionName = "0.1.6"
     vectorDrawables.useSupportLibrary = true
@@ -84,7 +84,7 @@ android {
 
   testOptions {
   }
-  namespace = "com.google.samples.apps.sunflower"
+  namespace = "com.tusql.app"
 }
 
 androidComponents {

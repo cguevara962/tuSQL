@@ -1,17 +1,17 @@
 # tuSQL - Mi Jardín Personal con Android y SQLite
 
-Warning: The Sunflower repository is no longer under maintenance, We are prioritizing https://github.com/android/compose-samples as the up-to-date source of truth for Compose best practises. Please use that repository and sample set to continue learning about Jetpack Compose. If you'd like to continue using Sunflower, we encourage you to maintain your own fork of the sample. 
+Warning: The tuSQL repository is no longer under maintenance, We are prioritizing https://github.com/android/compose-samples as the up-to-date source of truth for Compose best practises. Please use that repository and sample set to continue learning about Jetpack Compose. If you'd like to continue using tuSQL, we encourage you to maintain your own fork of the sample. 
 
 A gardening app illustrating Android development best practices with migrating a View-based app to
-Jetpack Compose. To learn about how Sunflower was migrated to Compose, see the 
-[migration journey](https://github.com/android/sunflower/blob/main/docs/MigrationJourney.md) document.
+Jetpack Compose. To learn about how tuSQL was migrated to Compose, see the 
+[migration journey](https://github.com/android/tusql/blob/main/docs/MigrationJourney.md) document.
 
 > [!Note]
-> To see the original View implementation of Sunflower, checkout the [`views`](https://github.com/android/sunflower/tree/views) branch.
+> To see the original View implementation of tuSQL, checkout the [`views`](https://github.com/android/tusql/tree/views) branch.
 
 ## Screenshots
 
-<img src="screenshots/SunflowerM3Screenshots.png"/>
+<img src="screenshots/tuSQLM3Screenshots.png"/>
 
 ## Features
 
@@ -22,13 +22,13 @@ See the linked migration journey doc above to learn more.
 > As Compose cannot render HTML code in `Text` yet. The 
 > `AndroidViewBinding` API is used to embed a `TextView` in Compose. See the 
 > `PlantDescription` composable in the
-> [PlantDetailView file](app/src/main/java/com/google/samples/apps/sunflower/compose/plantdetail/PlantDetailView.kt).
+> [PlantDetailView file](app/src/main/java/com/tusql/app/compose/plantdetail/PlantDetailView.kt).
 
 ## Requirements
 
 ### Unsplash API key
 
-Sunflower uses the [Unsplash API](https://unsplash.com/developers) to load pictures on the gallery
+tuSQL uses the [Unsplash API](https://unsplash.com/developers) to load pictures on the gallery
 screen. To use the API, you will need to obtain a free developer API key. See the
 [Unsplash API Documentation](https://unsplash.com/documentation) for instructions.
 
@@ -46,7 +46,7 @@ Android Studio IDE setup
 For development, the latest version of Android Studio is required. The latest version can be
 downloaded from [here](https://developer.android.com/studio/).
 
-Sunflower uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
+tuSQL uses [ktlint](https://ktlint.github.io/) to enforce Kotlin coding styles.
 Here's how to configure it for use with Android Studio (instructions adapted
 from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)):
 
@@ -60,11 +60,11 @@ from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)
 
 Additional resources
 --------------------
-Check out these Wiki pages to learn more about Android Sunflower:
+Check out these Wiki pages to learn more about Android tuSQL:
 
-- [Notable Community Contributions](https://github.com/android/sunflower/wiki/Notable-Community-Contributions)
+- [Notable Community Contributions](https://github.com/android/tusql/wiki/Notable-Community-Contributions)
 
-- [Publications](https://github.com/android/sunflower/wiki/Sunflower-Publications)
+- [Publications](https://github.com/android/tusql/wiki/tuSQL-Publications)
 
 Non-Goals
 ---------
@@ -81,7 +81,7 @@ Support
   - https://stackoverflow.com/questions/tagged/android-jetpack-compose
 
 If you've found an error in this sample, please file an issue:
-https://github.com/android/sunflower/issues
+https://github.com/android/tusql/issues
 
 Patches are encouraged, and may be submitted by forking this project and submitting a pull request
 through GitHub.

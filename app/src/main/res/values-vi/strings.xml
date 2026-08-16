@@ -26,7 +26,7 @@
     <string name="plant_date_header">Đã trồng</string>
     <string name="watered_date_header">Lần cuối tưới</string>
     <string name="menu_item_share_plant">Chia sẻ</string>
-    <string name="share_text_plant">Xem cây %s tại ứng dụng Android Sunflower</string>
+    <string name="share_text_plant">Xem cây %s tại ứng dụng Android tuSQL</string>
     <string name="gallery_title">Hình ảnh từ Unsplash</string>
 
     <!-- String plurals and their related prefix / suffix strings -->
