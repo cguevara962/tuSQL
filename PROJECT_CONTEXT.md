@@ -24,6 +24,8 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 - [ ] **Limpieza de Paquetes:** Opcionalmente, renombrar el paquete técnico `com.google.samples.apps.sunflower` a `com.tuSQL.app`.
 - [ ] **Nuevas Tablas:** Si se añaden más entidades a Room, registrarlas en el `DatabaseViewModel` e incluirlas en el inspector.
 - [ ] **UI/UX:** Mejorar el diseño visual de las filas en el inspector de tablas para que sea más legible (filtros, búsqueda).
+- [ ] **Creación Dinámica de Tablas:** Implementar un motor SQL puro (SupportSQLiteDatabase) para permitir al usuario definir y crear sus propias tablas en tiempo de ejecución.
+- [ ] **Exposición de Datos como Servicio:** Desarrollar una capa de servicio empresarial (estilo ContentProvider o API local con Ktor) para permitir el acceso seguro a los datos desde aplicaciones externas o dispositivos en la misma red.
 
 ---
 *Documento generado el 16 de Agosto de 2026 para asegurar la continuidad del desarrollo.*
