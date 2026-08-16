@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+rootProject.name = "tuSQL"
+
 pluginManagement {
   repositories {
     gradlePluginPortal()
