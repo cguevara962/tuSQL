@@ -47,5 +47,16 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 3. **Fase 3: Exportación Maestra:** Herramientas para exportar datos a formatos profesionales (CSV, Excel, SQL dumps).
 4. **Fase 4: Servicio Empresarial:** Exposición de la base de datos local como un Micro-servicio (Ktor) para acceso remoto desde PC u otras aplicaciones.
 
+## 🏦 Configuración Financiera y de Pagos (Futuro)
+**Objetivo:** Recibir pagos de Google Play Billing en cuenta local.
+- **Banco de Destino:** Bancolombia (Cuenta de Ahorros).
+- **Código SWIFT:** `COLOCOBM`.
+- **Configuración Clave:** Activar "Abono Automático" en la Sucursal Virtual Bancolombia para evitar retenciones manuales.
+- **Concepto de Declaración:** "Servicios de informática y de información".
+- **Visión a Largo Plazo:** tuSQL es solo la primera de una serie de aplicaciones (Ecosistema de Apps de Productividad/Ingeniería).
+
+---
+*Documento actualizado el 22 de Agosto de 2026 tras el despliegue exitoso en Internal Testing.*
+
 ---
 *Documento generado el 16 de Agosto de 2026 para asegurar la continuidad del desarrollo.*
