@@ -21,8 +21,9 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 - **KSP:** Configurado para funcionar con el motor KSP1/KSP2 según la estabilidad del build.
 
 ## 📌 Pendientes y Próximos Pasos
-- [ ] **Firma de Producción:** Rellenar el archivo `keystore.properties` con las contraseñas reales y la ruta del archivo `.jks` una vez que Google apruebe la identidad.
-- [ ] **Despliegue Privado:** Subir el primer `.aab` al canal de "Internal Testing" en Google Play Console.
+- [x] **Firma de Producción:** Configurado el archivo `keystore.properties` y generada la llave `.jks`.
+- [x] **Despliegue Play Store:** Aplicación publicada con éxito en el canal de **Internal Testing** (Version 2, 0.1.7).
+- [ ] **Instalación y Pruebas Reales:** Descargar la app desde el enlace de testers en un dispositivo físico y verificar el funcionamiento del Inspector de Tablas.
 - [ ] **Edición en Inspector:** Permitir editar o eliminar registros directamente desde la pantalla de inspección de tablas.
 - [ ] **Creación Dinámica de Tablas:** Implementar un motor SQL puro (SupportSQLiteDatabase) para permitir al usuario definir y crear sus propias tablas en tiempo de ejecución.
 - [ ] **Exposición de Datos como Servicio:** Desarrollar una capa de servicio empresarial (estilo ContentProvider o API local con Ktor) para permitir el acceso seguro a los datos desde aplicaciones externas o dispositivos en la misma red.
