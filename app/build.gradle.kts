@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import java.util.Properties
+
 plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.kotlin.android)
@@ -22,16 +24,31 @@ plugins {
   alias(libs.plugins.compose.compiler)
 }
 
+val keystorePropertiesFile = rootProject.file("keystore.properties")
+val keystoreProperties = Properties()
+if (keystorePropertiesFile.exists()) {
+  keystoreProperties.load(keystorePropertiesFile.inputStream())
+}
+
 android {
   compileSdk = libs.versions.compileSdk.get().toInt()
+
+  signingConfigs {
+    create("release") {
+      keyAlias = keystoreProperties["keyAlias"] as String?
+      keyPassword = keystoreProperties["keyPassword"] as String?
+      storeFile = keystoreProperties["storeFile"]?.let { file(it) }
+      storePassword = keystoreProperties["storePassword"] as String?
+    }
+  }
 
   defaultConfig {
     applicationId = "com.tusql.app"
     minSdk = libs.versions.minSdk.get().toInt()
     targetSdk = libs.versions.targetSdk.get().toInt()
     testInstrumentationRunner = "com.tusql.app.utilities.MainTestRunner"
-    versionCode = 1
-    versionName = "0.1.6"
+    versionCode = 2
+    versionName = "0.1.7"
     vectorDrawables.useSupportLibrary = true
 
     // Consult the README on instructions for setting up Unsplash API key
@@ -45,6 +62,7 @@ android {
   buildTypes {
     release {
       isMinifyEnabled = true
+      signingConfig = signingConfigs.getByName("release")
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
     }
     create("benchmark") {

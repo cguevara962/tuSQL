@@ -19,7 +19,7 @@ activityCompose = "1.9.0"
 androidGradlePlugin = "9.3.1"
 benchmark = "1.2.4"
 # @keep
-compileSdk = "34"
+compileSdk = "35"
 # @keep
 compose-compiler = "1.5.13"
 composeBom = "2024.05.00"
@@ -56,7 +56,7 @@ room = "2.8.4"
 spotless = "6.25.0"
 systemuicontroller = "0.34.0"
 # @keep
-targetSdk = "34"
+targetSdk = "35"
 testExtJunit = "1.1.5"
 uiAutomator = "2.3.0"
 version-catalog-update = "0.8.4"

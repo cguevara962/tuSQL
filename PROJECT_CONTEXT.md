@@ -11,6 +11,7 @@ La aplicación ha sido migrada de tuSQL a **tuSQL**, enfocándose en la visibili
 - **Iconografía:** Se añadió un icono de base de datos (`ic_database.xml`) personalizado en la barra superior.
 - **Sincronización Git:** El proyecto está vinculado y actualizado en `https://github.com/cguevara962/tuSQL.git`.
 - **Despliegue Play Store:** Cuenta de desarrollador activa vinculada a `cguevara962@gmail.com`. Estado de verificación consultable en: [Google Play Console - App List](https://play.google.com/console/u/0/developers/5925065880363590530/app-list).
+- **Link de Pruebas Internas:** [Descargar tuSQL para Android](https://play.google.com/apps/internaltest/4700585050810948227)
 
 ## 🛠️ Stack Tecnológico (Configuración Crítica)
 Para mantener la estabilidad del proyecto, se deben respetar estas versiones (ajustadas para compatibilidad con Kotlin 2.2.x):
