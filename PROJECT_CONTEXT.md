@@ -29,5 +29,8 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 - [ ] **Creación Dinámica de Tablas:** Implementar un motor SQL puro (SupportSQLiteDatabase) para permitir al usuario definir y crear sus propias tablas en tiempo de ejecución.
 - [ ] **Exposición de Datos como Servicio:** Desarrollar una capa de servicio empresarial (estilo ContentProvider o API local con Ktor) para permitir el acceso seguro a los datos desde aplicaciones externas o dispositivos en la misma red.
 
+## 🎨 Principios de Diseño y UX
+- **Anti "Fat Finger" (Clicks Accidentales):** Prohibido colocar anuncios o botones críticos pegados a otros elementos interactivos. Se debe garantizar un margen de seguridad (mínimo 16dp) y reservar el espacio del layout antes de cargar anuncios para evitar desplazamientos súbitos que estresen al usuario.
+
 ---
 *Documento generado el 16 de Agosto de 2026 para asegurar la continuidad del desarrollo.*
