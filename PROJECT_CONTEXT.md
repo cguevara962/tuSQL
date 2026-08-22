@@ -34,5 +34,18 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 - **Áreas Táctiles Generosas:** Todos los botones y elementos interactivos deben tener un tamaño mínimo de **48x48dp** (siguiendo las guías de accesibilidad de Android) para evitar que sean difíciles de pulsar.
 - **Cero Desplazamiento de Layout (Anti-Jumping UI):** Queda terminantemente prohibido que la carga de un anuncio o imagen mueva de lugar un botón mientras el usuario intenta pulsarlo. Se deben usar **contenedores con dimensiones fijas** o "Skeletons" para reservar el espacio desde el milisegundo cero del arranque de la app.
 
+## 💰 Hoja de Ruta de Monetización y Negocio
+**Meta:** Generar un ingreso mínimo de **$1,000 USD mensuales**.
+
+### Estrategia de Precios (tuSQL Pro):
+- **Suscripción Mensual:** $1.00 USD/mes.
+- **Licencia Vitalicia (Lifetime):** $10.00 USD (Acceso completo para siempre).
+
+### Roadmap de Funcionalidades Pro:
+1. **Fase 1: Edición y Gestión:** CRUD completo de registros en el inspector de tablas actual.
+2. **Fase 2: Motor Dinámico:** Permitir la creación y eliminación de tablas personalizadas por el usuario en runtime.
+3. **Fase 3: Exportación Maestra:** Herramientas para exportar datos a formatos profesionales (CSV, Excel, SQL dumps).
+4. **Fase 4: Servicio Empresarial:** Exposición de la base de datos local como un Micro-servicio (Ktor) para acceso remoto desde PC u otras aplicaciones.
+
 ---
 *Documento generado el 16 de Agosto de 2026 para asegurar la continuidad del desarrollo.*
