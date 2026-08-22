@@ -30,7 +30,9 @@ Para mantener la estabilidad del proyecto, se deben respetar estas versiones (aj
 - [ ] **Exposición de Datos como Servicio:** Desarrollar una capa de servicio empresarial (estilo ContentProvider o API local con Ktor) para permitir el acceso seguro a los datos desde aplicaciones externas o dispositivos en la misma red.
 
 ## 🎨 Principios de Diseño y UX
-- **Anti "Fat Finger" (Clicks Accidentales):** Prohibido colocar anuncios o botones críticos pegados a otros elementos interactivos. Se debe garantizar un margen de seguridad (mínimo 16dp) y reservar el espacio del layout antes de cargar anuncios para evitar desplazamientos súbitos que estresen al usuario.
+- **Anti "Fat Finger" (Clicks Accidentales):** Prohibido colocar anuncios o botones críticos pegados a otros elementos interactivos. Se debe garantizar un margen de seguridad (mínimo 16dp).
+- **Áreas Táctiles Generosas:** Todos los botones y elementos interactivos deben tener un tamaño mínimo de **48x48dp** (siguiendo las guías de accesibilidad de Android) para evitar que sean difíciles de pulsar.
+- **Cero Desplazamiento de Layout (Anti-Jumping UI):** Queda terminantemente prohibido que la carga de un anuncio o imagen mueva de lugar un botón mientras el usuario intenta pulsarlo. Se deben usar **contenedores con dimensiones fijas** o "Skeletons" para reservar el espacio desde el milisegundo cero del arranque de la app.
 
 ---
 *Documento generado el 16 de Agosto de 2026 para asegurar la continuidad del desarrollo.*
